@@ -36,12 +36,32 @@ rightBlock.style.width = "30%"
 rightBlock.style.height = "100%"
 rightBlock.style.backgroundColor = "rgba(9, 17, 27, 0.94)";
 
+document.body.appendChild(leftBlock);
+document.body.appendChild(rightBlock);
+
 function square(){
 	var width =  document.body.clientWidth;
 	var height = document.body.clientHeight;
-	var aspectRatio = (width-height)/width;
-	var aspectRatioVert = (height-width)/height;
+	var aspectRatio = (width - height) / width;
+	var aspectRatioVert = (height - width) / height;
 
+	console.log(aspectRatio);
 
+	if (aspectRatio > 0){
+		pct = Math.floor((aspectRatio *  100) / 2);
+		leftBlock.style.width = pct.toString() + "%";
+		leftBlock.style.height = "100%";
+		rightBlock.style.width = pct.toString() + "%";
+		rightBlock.style.height = "100%";
+	}else{
+		// For Portait framed body widow
+		pct = Math.floor((aspectRatioVert * 100) / 2);
+		leftBlock.style.height = pct.toString() + "%";
+		leftBlock.style.width = "100%";
+		rightBlock.style.height = pct.toString() + "%";
+		rightBlock.style.width = "100%";
+	}
+
+	//Get Scale Element and move it too
 
 }
