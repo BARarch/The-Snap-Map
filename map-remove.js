@@ -104,3 +104,15 @@ function toggle(){
 	}
 
 }
+
+function toggleHandler(event){
+	if (event.keyCode == 38){
+		toggle();
+		console.log("UpKey");
+	}
+
+}
+
+square();
+document.body.onresize = function(){square()};
+addEventListener("keydown", toggleHandler);
