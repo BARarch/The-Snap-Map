@@ -76,7 +76,6 @@ function square(){
 		scale.style.right = "0";
 		scale.style.bottom = pct.toString() + "%";
 	}
-
 }
 
 function toggle(){
