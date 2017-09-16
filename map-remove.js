@@ -33,12 +33,12 @@ leftBlock.style.width = "30%"
 leftBlock.style.height = "100%"
 leftBlock.style.backgroundColor = "rgba(9, 17, 27, 0.94)";
 
-leftBlock.style.position = "absolute";
-leftBlock.style.bottom = "0";
-leftBlock.style.right = "0";
-leftBlock.style.width = "30%"
-leftBlock.style.height = "100%"
-leftBlock.style.backgroundColor = "rgba(9, 17, 27, 0.94)";
+rightBlock.style.position = "absolute";
+rightBlock.style.bottom = "0";
+rightBlock.style.right = "0";
+rightBlock.style.width = "30%"
+rightBlock.style.height = "100%"
+rightBlock.style.backgroundColor = "rgba(9, 17, 27, 0.94)";
 
 
 function square(){
