@@ -1,4 +1,7 @@
-var ids = ["gb", "fineprint"];
+
+
+var ids = ["gb", "fineprint", "omnibox"];
+
 var classes = ["app-horizontal-widget-holder", "app-vertical-widget-holder"]
 var scaleID = "scale";
 
@@ -19,12 +22,31 @@ for (var i = 0; i < classes.length; i++) {
   }
 }
 
+
+var leftBlock = document.createElement("div");
+var rightBlock = document.createElement("div");
+
+leftBlock.style.position = "absolute";
+leftBlock.style.top = "0";
+leftBlock.style.left = "0";
+leftBlock.style.width = "30%"
+leftBlock.style.height = "100%"
+leftBlock.style.backgroundColor = "rgba(9, 17, 27, 0.94)";
+
+leftBlock.style.position = "absolute";
+leftBlock.style.bottom = "0";
+leftBlock.style.right = "0";
+leftBlock.style.width = "30%"
+leftBlock.style.height = "100%"
+leftBlock.style.backgroundColor = "rgba(9, 17, 27, 0.94)";
+
+
 function square(){
 	var width =  document.body.clientWidth;
 	var height = document.body.clientHeight;
 	var aspectRatio = (width-height)/width;
 	var aspectRatioVert = (height-width)/height;
 
-	
+
 
 }
