@@ -1,7 +1,4 @@
-
-
 var ids = ["gb", "fineprint", "omnibox"];
-
 var classes = ["app-horizontal-widget-holder", "app-vertical-widget-holder"]
 var scaleID = "scale";
 
@@ -22,7 +19,6 @@ for (var i = 0; i < classes.length; i++) {
   }
 }
 
-
 var leftBlock = document.createElement("div");
 var rightBlock = document.createElement("div");
 var scale = document.getElementById(scaleID);
@@ -42,8 +38,6 @@ rightBlock.style.width = "30%"
 rightBlock.style.height = "100%"
 rightBlock.style.backgroundColor = "rgba(9, 17, 27, 0.94)";
 
-<<<<<<< HEAD
-=======
 scale.style.position = "absolute";
 scale.style.bottom = "22px";
 scale.style.right = "30%";
@@ -53,7 +47,6 @@ document.getElementsByClassName("widget-scale-ruler")[0].style.borderColor = "rg
 document.body.appendChild(leftBlock);
 document.body.appendChild(rightBlock);
 document.body.appendChild(scale);
->>>>>>> 003dd8ee0e8839266165c131140104f074dd105c
 
 function square(){
 	var width =  document.body.clientWidth;
