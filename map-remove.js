@@ -132,9 +132,9 @@ function toggle(){
 // Event handeler for toggle
 function toggleHandler(event){
 	// Up arrow key code: 38
-	if (event.keyCode == 38){
+	if (event.keyCode == 191){
 		toggle();
-		console.log("UpKey");
+		console.log("Slash");
 	}
 
 }
